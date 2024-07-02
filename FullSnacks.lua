@@ -18,9 +18,9 @@ script.register_looped("Always Full Snacks", function (script)
         stats.set_int("MPX_BREATHING_APPAR_BOUGHT", 20)
         stats.set_int("MPX_CLUB_POPULARITY", 1000)
         stats.set_float("MPX_PLAYER_MENTAL_STATE", 0)
-        local mental_state_global = globals.get_uint(2738587 + 4699)
+        local mental_state_global = globals.get_uint(2738934 + 4714)
         mental_state_global = mental_state_global | (1 << 0)
-        globals.set_uint(2738587 + 4699, mental_state_global)
+        globals.set_uint(2738934 + 4714, mental_state_global)
         stats.set_packed_stat_int(26363, 0) --Casino Penthouse Cleanliness stat.
         stats.set_packed_stat_bool(27214, false) --Casino Penthouse has thrown party.
         PED.SET_PED_ARMOUR(PLAYER.PLAYER_PED_ID(), PLAYER.GET_PLAYER_MAX_ARMOUR(PLAYER.PLAYER_ID()))
